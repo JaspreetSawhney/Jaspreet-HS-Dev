@@ -1,0 +1,485 @@
+@CHARSET "UTF-8";
+/* Form */
+.SBScript_Form{
+	margin: 0;
+}
+.SBScript_Form p{
+	clear: left;
+	margin: 0 0 10px 0;
+	overflow: hidden;
+}
+.SBScript_Form p img{
+	margin: 0 17px 0 0;
+	vertical-align: middle;	
+}
+.SBScript_Form label.title{
+	display: block;
+	font-weight: bold;
+	float: left;
+	width: 120px;
+}
+.SBScript_Form .SBScript_Field{
+	border: solid 1px #d3d9db;
+	box-shadow: 2px 2px 1px #f0f0f0 inset;
+	padding: 5px 2px;
+}
+.SBScript_Form .SBScript_FieldText{
+	width: 200px;
+}
+.SBScript_PseudoField{
+	float: left;
+	display: block;
+	white-space: nowrap;
+	width: 220px;
+}
+.SBScript_Form .SBScript_FieldTextSmall{
+	width: 100px;
+}
+.SBScript_Form .SBScript_FieldTextarea{
+	height: 80px;
+	width: 200px;
+	resize: none;
+}
+.SBScript_Form .SBScript_FieldSelect{
+	width: 206px;
+}
+.SBScript_Form .SBScript_FieldSelectMedium{
+	width: 101px;
+}
+.SBScript_Form .SBScript_FieldSelectMini{
+	width: 45px;
+}
+.SBScript_Form .SBScript_FieldCheckbox{
+	margin: 0;
+}
+.SBScript_Form .SBScript_Error{
+	color: red;
+}
+/* Table */
+.SBScript_Table{
+	border-collapse: collapse;
+	empty-cells: show;
+	width: 100%;
+}
+.SBScript_Table tr{}
+.SBScript_Table thead th{
+	text-align: left;
+	font-weight: bold !important;
+	padding: 4px 2px;
+	border-bottom: solid 1px #C5C5C5;
+}
+.SBScript_Table tbody td{
+	padding: 2px;
+}
+/* Events */
+.SBScript_Event_Time{}
+.SBScript_Event_Title{font-weight:bold; margin:5px 0px}
+.SBScript_Event_Description{
+	margin: 0 0 5px 0;
+}
+.SBScript_Event_Left{
+	float: left;
+	width: 75%;
+	overflow: hidden;
+}
+.SBScript_Event_Right{
+	/*float: right;*/
+	text-align: right;
+	width: 25%;
+}
+.SBScript_Event_Detail{
+	font-weight: bold;
+	float: left;
+	margin: 0 5px 0 0;
+}
+.SBScript_Event_Detail span{
+	color: #999;
+	font-weight: normal;
+}
+.SBScript_Event_Add input{
+	vertical-align: middle;
+}
+.SBScript_Already{
+	margin: 0 0 15px 0;
+	width: auto;
+}
+.SBScript_Pointer{
+	cursor: pointer;
+}
+.SBScript_Bold{
+	font-weight: bold !important;
+}
+.SBScript_Center{
+	text-align: center !important;
+}
+.SBScript_Right{
+	text-align: right !important;
+}
+.SBScript_Clear_Both{
+	clear: both;
+}
+.SBScript_Float_Left{
+	float: left;
+}
+.SBScript_Float_Right{
+	float: right;
+}
+.SBScript_Overflow{
+	overflow: hidden;
+}
+
+.SBScript_Price_Length{
+	padding-top:15px
+}
+
+.SBScript_Event_Book  {
+	margin-left:10px;	
+}
+
+/* Paginator */
+.SBScript_Paginator{
+	background-color: #fff;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 5px 0;
+	overflow: hidden;
+}
+.SBScript_Paginator li{
+	display: inline;
+	list-style: none;
+}
+.SBScript_Paginator a:link, .SBScript_Paginator a:visited{
+	background: url(../img/f_pagin.png) 0 0 no-repeat;
+	color: #76787a;
+	width: 22px;
+	height: 21px;
+	line-height: 19px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+}
+.SBScript_Paginator a.pagin,
+.SBScript_Paginator a:hover{}
+.SBScript_Paginator .current{
+	background: url(../img/f_pagin.png) 0 0 no-repeat;
+	display: block;
+	width: 22px;
+	height: 21px;
+	line-height: 19px;
+	float: left;
+	font-weight: bold;
+	margin: 0;
+	color: #444;
+	padding: 0;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+}
+.SBScript_Paginator .dots{
+	color: #76787a;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: block;
+	width: 22px;
+	height: 21px;
+	line-height: 19px;
+	float: left;
+}
+/* Design */
+.SBScript_Holder{
+	margin: 0 0 10px 0;
+	width: 267px;
+	overflow: hidden;
+}
+.SBScript_W_Holder{
+	margin: 0 0 10px 0;
+	width: 462px;
+	overflow: hidden;
+}
+.SBScript_Top{
+	background: #e8e8e8 url(../img/f_e_top_middle.png) 0 0 repeat-x;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	padding: 0 10px;
+	position: relative;
+}
+.SBScript_Top_Left{
+	background: #fff url(../img/f_e_top_left.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 30px;
+}
+.SBScript_Top_Right{
+	background: #fff url(../img/f_e_top_right.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4px;
+	height: 30px;
+}
+.SBScript_Top_Close{
+	background: url(../img/f_close.png) 0 0 no-repeat;
+	display: block;
+	position: absolute;
+	top: 7px;
+	right: 9px;
+	width: 16px;
+	height: 16px;
+}
+.SBScript_Middle{
+	background: #fff url(../img/f_middle_right.png) top right repeat-y;
+	border-left: solid 1px #d0c5c5;
+	overflow: hidden;
+	padding: 6px 9px 6px 6px;
+}
+.SBScript_Bottom{
+	background: transparent url(../img/f_bottom_middle.png) bottom left repeat-x;
+	height: 5px;
+	position: relative;
+}
+.SBScript_Bottom_Left{
+	background: #fff url(../img/f_bottom_left.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 5px;
+}
+.SBScript_Bottom_Right{
+	background: #fff url(../img/f_bottom_right.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4px;
+	height: 5px;
+}
+.SBScript_Button{
+	background: url(../img/f_button.png) 0 0 no-repeat;
+	border: none;
+	color: #414243;
+	cursor: pointer;
+	font-weight: bold;
+	outline: none;
+	padding: 0;
+	width: 90px;
+	height: 34px;
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 130px;
+}
+.SBScript_W_Top{
+	height: 3px;
+	background: #fff url(../img/f_top_middle.png) 0 0 repeat-x;
+	position: relative;
+}
+.SBScript_W_Top_Left{
+	background: #fff url(../img/f_top_left.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 3px;
+}
+.SBScript_W_Top_Right{
+	background: #fff url(../img/f_top_right.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4px;
+	height: 3px;
+}
+.SBScript_Row{
+	border-bottom: solid 1px #e9e4e4;
+	margin: 5px 10px !important;
+	padding: 0 0 5px 0;
+}
+.SBScript_Error{
+	color: #860707;
+	background: url(../img/f_warn_pattern.png) 0 0 repeat;
+	margin: 0 10px;
+	padding: 5px 5px 5px 44px;
+	border: solid 1px #f8c8c8;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-box-shadow: 1px 1px 2px #f2f2f2;
+	-webkit-box-shadow: 1px 1px 2px #f2f2f2;
+	box-shadow: 1px 1px 2px #f2f2f2;
+	position: relative;
+}
+.SBScript_Error span{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	display: block;
+	width: 31px;
+	height: 26px;
+	background: url(../img/f_warn.png) 0 0 no-repeat;
+}
+.SBScript_Preload{
+	background: url(../img/loading_60.gif) center center no-repeat;
+	left: 230px;
+	position: absolute;
+	top: 0;
+}
+/* T */
+.t-head{
+	background-color: #ddd;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	text-indent: 5px;
+	width: 100%;
+	border-radius: 2px 2px 0 0;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+}
+.t-holder{
+	border-bottom: solid 1px #ddd;
+	margin: 0 0 10px;
+	padding: 0 0 15px;
+}
+.t-title{
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+.t-area{
+	overflow: hidden;
+}
+.t-block{
+	float: left; 
+	display: block; 
+	width: 45px; 
+	height: 22px; 
+	line-height: 22px; 
+	text-align: center; 
+	border-right: 1px solid #000; 
+	border-bottom: 1px solid #000;
+}
+.t-available{
+	background-color: #339900;
+	color: #fff;
+	cursor: pointer;
+}
+.t-booked{
+	background-color: #CC0000;
+	color: #fff;
+}
+.t-unavailable{
+	background-color: #999;
+}
+.t-selected{
+	background-color: #333;
+	color: #fff;
+}
+.StivaApp_Box{
+	background-color: #fff;
+}
+.StivaApp_Box_Top{
+	background: url(../img/h_top_middle.png) 0 0 repeat-x;
+	color: #504e4e;
+	font: bold 14px Arial, sans-serif;
+	height: 35px;
+	line-height: 35px;
+	position: relative;
+	text-indent: 43px;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+.StivaApp_Box_Top_Left{
+	background: #fff url(../img/h_top_left.png) 0 0 no-repeat;
+	height: 35px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 2px;
+}
+.StivaApp_Box_Top_Right{
+	background: #fff url(../img/h_top_right.png) 0 0 no-repeat;
+	height: 35px;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 4px;
+}
+.StivaApp_Box_Top_Point{
+	background: transparent url(../img/h_point.png) 0 0 no-repeat;
+	color: #fff;
+	display: block;
+	font: bold 14px Arial, sans-serif;
+	height: 24px;
+	line-height: 20px;
+	left: 12px;
+	position: absolute;
+	top: 8px;
+	text-indent: 6px;
+	text-shadow: 1px 1px 1px #333;
+	width: 23px;
+}
+.StivaApp_Box_Middle{
+	background: url(../img/h_middle_right.png) top right repeat-y;
+	border-left: solid 1px #d0c5c5;
+	overflow: hidden;
+}
+.StivaApp_Box_Bottom{
+	background: url(../img/h_bottom_middle.png) 0 0 repeat-x;
+	height: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.StivaApp_Box_Bottom_Left{
+	background: #fff url(../img/h_bottom_left.png) 0 0 no-repeat;
+	height: 5px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 2px;
+}
+.StivaApp_Box_Bottom_Right{
+	background: #fff url(../img/h_bottom_right.png) 0 0 no-repeat;
+	height: 5px;
+	right: 0;
+	position: absolute;
+	top: 0;
+	width: 4px;
+}
+/* */
+.StivaApp_B5{margin-bottom: 5px}.StivaApp_B10{margin-bottom: 10px}
+.StivaApp_P5{padding: 5px}.StivaApp_P10{padding: 10px}
+.bcal-container{
+	padding: 5px 5px 5px 8px;
+	border-radius: 0;
+	-moz-border-radius: none;
+	-webkit-border-radius: none;
+	border: none;
+	box-shadow: none;	
+}
+.bcal-table .bcal-selected{
+	background-color: #339900;
+	border: none;
+	color: #fff;
+}
+.bcal-table{
+	float: none;
+}
+.StivaApp_Basket_El{
+	color: #707173;
+	font: normal 11px Arial, sans-serif;	
+}
+.StivaApp_Basket_Row{
+	border-bottom: solid 1px #ebeaea;
+}
+.StivaApp_Basket_Table{
+	width: 216px !important;
+	overflow: hidden;
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Twilio.WebMatrix</name>
+    </assembly>
+    <members>
+        <member name="T:Twilio.WebMatrix.Twilio">
+            <summary>
+            A set of Twilio helpers for WebMatrix sites
+            </summary>
+        </member>
+        <member name="M:Twilio.WebMatrix.Twilio.SendSms(System.String,System.String,System.String,System.String)">
+            <summary>
+            Send an SMS message
+            </summary>
+            <param name="from">The number to send the message from</param>
+            <param name="to">The number to send the message to</param>
+            <param name="body">The contents of the message, up to 160 characters</param>
+            <param name="statusCallbackUrl">The URL to notify of the message status</param>
+            <returns>An SMSMessage Instance resource</returns>
+        </member>
+        <member name="M:Twilio.WebMatrix.Twilio.MakeCall(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Initiate a new outgoing call
+            </summary>
+            <param name="from">The phone number to call from</param>
+            <param name="to">The phone number to call to</param>
+            <param name="url">The TwiML URL to use for controlling this call</param>
+            <param name="statusCallback">The URL to notify upon completion of the call</param>
+            <param name="statusCallbackMethod">The HTTP method to use when requesting the statusCallback URL</param>
+            <param name="fallbackUrl">The URL to request upon encountering an in-call error</param>
+            <param name="fallbackMethod">The HTTP method to use when requesting the fallbackUrl</param>
+            <param name="ifMachine">The action to take when encountering an answering machine</param>
+            <param name="sendDigits">The DTMF touch tone digits to transmit when the call is answered</param>
+            <param name="timeout">The amount of time to allow a call to ring before ending</param>
+            <returns>A Call Instance resource</returns>
+        </member>
+        <member name="P:Twilio.WebMatrix.Twilio.AccountSid">
+            <summary>
+            The AccountSid to authenticate with when making requests
+            </summary>
+        </member>
+        <member name="P:Twilio.WebMatrix.Twilio.AuthToken">
+            <summary>
+            The AuthToken to authenticate with when making requests
+            </summary>
+        </member>
+    </members>
+</doc>

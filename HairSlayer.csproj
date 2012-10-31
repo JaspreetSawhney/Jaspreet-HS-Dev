@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{901AAFB3-2C07-4F90-96D4-E6B7843B525B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HairSlayer</RootNamespace>
+    <AssemblyName>HairSlayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60623.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CS.Web.UI.CropImage">
+      <HintPath>..\..\..\..\BizApps\CONTROLS\ImageCrop\CS.Web.UI.CropImage.dll</HintPath>
+    </Reference>
+    <Reference Include="DotnetGallery">
+      <HintPath>..\..\..\..\BizApps\dotnetgallery\Web\bin\DotnetGallery.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\..\BizApps\FacebookCSharpSDK-5.3.2.0\net40-client\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Web">
+      <HintPath>..\..\..\..\BizApps\FacebookCSharpSDK-5.3.2.0\net40\Facebook.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT">
+      <HintPath>..\packages\JWT.1.2\lib\3.5\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.3.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.3.5\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.3.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.3.5\Assemblies\v4.0\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Json45r9\Bin\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.104.1\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60623\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Twilio.Api">
+      <HintPath>..\packages\Twilio.3.5.5\lib\3.5\Twilio.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.Client.Capability">
+      <HintPath>..\packages\Twilio.Client.3.4.2\lib\3.5\Twilio.Client.Capability.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.Twiml">
+      <HintPath>..\packages\Twilio.TwiML.3.2.0\lib\3.5\Twilio.Twiml.dll</HintPath>
+    </Reference>
+    <Reference Include="Twilio.WebMatrix">
+      <HintPath>..\packages\Twilio.WebMatrix.3.1.3\lib\3.5\Twilio.WebMatrix.dll</HintPath>
+    </Reference>
+    <Reference Include="YAXLib">
+      <HintPath>..\packages\RestPoint.1.2\lib\YAXLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AddFave.aspx" />
+    <Content Include="Calendar.aspx" />
+    <Content Include="Cax.aspx" />
+    <Content Include="Cron.aspx" />
+    <Content Include="DeleteService.aspx" />
+    <Content Include="Do.aspx" />
+    <Content Include="DoOfTheDay.aspx" />
+    <Content Include="Feat.aspx" />
+    <Content Include="Feats.aspx" />
+    <Content Include="Feature.aspx" />
+    <Content Include="Features.aspx" />
+    <Content Include="Forgot.aspx" />
+    <Content Include="images\bg03.gif" />
+    <Content Include="images\bg04.gif" />
+    <Content Include="images\exit.gif" />
+    <Content Include="images\fb-login.gif" />
+    <Content Include="images\fb-register.gif" />
+    <Content Include="images\icon-camera.png" />
+    <Content Include="images\icon-user.png" />
+    <Content Include="images\inacup_vanilla.jpg" />
+    <Content Include="images\left_scroll.png" />
+    <Content Include="images\mission.png" />
+    <Content Include="images\nopic.gif" />
+    <Content Include="images\ratemydo.png" />
+    <Content Include="images\right_scroll.png" />
+    <Content Include="images\slide_handle.png" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="images\star_4F.png" />
+    <Content Include="images\star_4M.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="Index_Dev.aspx" />
+    <Content Include="inter-fb.aspx" />
+    <Content Include="Invite.aspx" />
+    <Content Include="InviteProvider.aspx" />
+    <Content Include="IPN.aspx" />
+    <Content Include="js\fb.js" />
+    <Content Include="js\functions.js" />
+    <Content Include="js\grayscale.js" />
+    <Content Include="js\jquery.maskedinput.js" />
+    <Content Include="js\picup.js" />
+    <Content Include="js\plugs.js" />
+    <Content Include="js\prototype.js" />
+    <Content Include="js\ratemydo.js" />
+    <Content Include="js\script.js" />
+    <Content Include="js\upload.js" />
+    <Content Include="js\upload_do.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="ManualCalendarSetup.aspx" />
+    <Content Include="oAk3j_5.aspx" />
+    <Content Include="OAuth.aspx" />
+    <Content Include="paypal.aspx" />
+    <Content Include="Pic.htm" />
+    <Content Include="PP.aspx" />
+    <Content Include="PPCancel.aspx" />
+    <Content Include="PPUpgrade.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="Profile_Up.aspx" />
+    <Content Include="Profile_Upload.aspx" />
+    <Content Include="Prov.aspx" />
+    <Content Include="RateDo.aspx" />
+    <Content Include="RateDo2.aspx" />
+    <Content Include="RateMyDo.aspx" />
+    <Content Include="RateProv.aspx" />
+    <Content Include="Rmd.aspx" />
+    <Content Include="Schedule.aspx" />
+    <Content Include="Scripts\jquery.color.js" />
+    <Content Include="Scripts\jquery.Jcrop.js" />
+    <Content Include="Scripts\jquery.Jcrop.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Search.aspx" />
+    <Content Include="SelectDo.aspx" />
+    <Content Include="SelectRMD.aspx" />
+    <Content Include="Signup.aspx" />
+    <Content Include="stylesheets\doofday.css" />
+    <Content Include="stylesheets\home.css" />
+    <Content Include="stylesheets\ratemydo.css" />
+    <Content Include="stylesheets\reset.css" />
+    <Content Include="stylesheets\style.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Terms.aspx" />
+    <Content Include="Tst.aspx" />
+    <Content Include="TwilioVoiceCall.aspx" />
+    <Content Include="Up.aspx" />
+    <Content Include="Up2.aspx" />
+    <Content Include="Upload.aspx" />
+    <Content Include="Upload.htm" />
+    <Content Include="User.aspx" />
+    <Content Include="UserControls\DoUpload.ascx" />
+    <Content Include="UserControls\FavesGrid.ascx" />
+    <Content Include="UserControls\Footer.ascx" />
+    <Content Include="UserControls\InteractiveImage.ascx" />
+    <Content Include="UserControls\Login.ascx" />
+    <Content Include="UserControls\NavBar.ascx" />
+    <Content Include="UserControls\RateImage.ascx" />
+    <Content Include="UserControls\RateMyDo.ascx" />
+    <Content Include="UserControls\ThumbGrid.ascx" />
+    <Content Include="UserControls\WatermarkImage.ascx" />
+    <Content Include="Validate.aspx" />
+    <Content Include="Verified.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm.aspx" />
+    <Content Include="HS-Service.asmx" />
+    <Content Include="xchange.aspx" />
+    <Content Include="X_Path.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddFave.aspx.cs">
+      <DependentUpon>AddFave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddFave.aspx.designer.cs">
+      <DependentUpon>AddFave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_LocalResources\Dos.cs" />
+    <Compile Include="App_LocalResources\PostSubmitter.cs" />
+    <Compile Include="App_LocalResources\Worker.cs" />
+    <Compile Include="Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cax.aspx.cs">
+      <DependentUpon>Cax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cax.aspx.designer.cs">
+      <DependentUpon>Cax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cron.aspx.cs">
+      <DependentUpon>Cron.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cron.aspx.designer.cs">
+      <DependentUpon>Cron.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteService.aspx.cs">
+      <DependentUpon>DeleteService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteService.aspx.designer.cs">
+      <DependentUpon>DeleteService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Do.aspx.cs">
+      <DependentUpon>Do.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Do.aspx.designer.cs">
+      <DependentUpon>Do.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoOfTheDay.aspx.cs">
+      <DependentUpon>DoOfTheDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoOfTheDay.aspx.designer.cs">
+      <DependentUpon>DoOfTheDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feat.aspx.cs">
+      <DependentUpon>Feat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feat.aspx.designer.cs">
+      <DependentUpon>Feat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feats.aspx.cs">
+      <DependentUpon>Feats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feats.aspx.designer.cs">
+      <DependentUpon>Feats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feature.aspx.cs">
+      <DependentUpon>Feature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feature.aspx.designer.cs">
+      <DependentUpon>Feature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Features.aspx.cs">
+      <DependentUpon>Features.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Features.aspx.designer.cs">
+      <DependentUpon>Features.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Header.Master.cs">
+      <DependentUpon>Header.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Header.Master.designer.cs">
+      <DependentUpon>Header.Master</DependentUpon>
+    </Compile>
+    <Compile Include="includes\Functions.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_LocalResources\Jan.cs" />
+    <Compile Include="includes\Thumbnails.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index_Dev.aspx.cs">
+      <DependentUpon>Index_Dev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index_Dev.aspx.designer.cs">
+      <DependentUpon>Index_Dev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inter-fb.aspx.cs">
+      <DependentUpon>inter-fb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inter-fb.aspx.designer.cs">
+      <DependentUpon>inter-fb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invite.aspx.cs">
+      <DependentUpon>Invite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invite.aspx.designer.cs">
+      <DependentUpon>Invite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InviteProvider.aspx.cs">
+      <DependentUpon>InviteProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InviteProvider.aspx.designer.cs">
+      <DependentUpon>InviteProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IPN.aspx.cs">
+      <DependentUpon>IPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IPN.aspx.designer.cs">
+      <DependentUpon>IPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManualCalendarSetup.aspx.cs">
+      <DependentUpon>ManualCalendarSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManualCalendarSetup.aspx.designer.cs">
+      <DependentUpon>ManualCalendarSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oAk3j_5.aspx.cs">
+      <DependentUpon>oAk3j_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oAk3j_5.aspx.designer.cs">
+      <DependentUpon>oAk3j_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OAuth.aspx.cs">
+      <DependentUpon>OAuth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OAuth.aspx.designer.cs">
+      <DependentUpon>OAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paypal.aspx.cs">
+      <DependentUpon>paypal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paypal.aspx.designer.cs">
+      <DependentUpon>paypal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PP.aspx.cs">
+      <DependentUpon>PP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PP.aspx.designer.cs">
+      <DependentUpon>PP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPCancel.aspx.cs">
+      <DependentUpon>PPCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PPCancel.aspx.designer.cs">
+      <DependentUpon>PPCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PPUpgrade.aspx.cs">
+      <DependentUpon>PPUpgrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PPUpgrade.aspx.designer.cs">
+      <DependentUpon>PPUpgrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile_Up.aspx.cs">
+      <DependentUpon>Profile_Up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile_Up.aspx.designer.cs">
+      <DependentUpon>Profile_Up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile_Upload.aspx.cs">
+      <DependentUpon>Profile_Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile_Upload.aspx.designer.cs">
+      <DependentUpon>Profile_Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prov.aspx.cs">
+      <DependentUpon>Prov.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prov.aspx.designer.cs">
+      <DependentUpon>Prov.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RateDo.aspx.cs">
+      <DependentUpon>RateDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RateDo.aspx.designer.cs">
+      <DependentUpon>RateDo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RateDo2.aspx.cs">
+      <DependentUpon>RateDo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RateDo2.aspx.designer.cs">
+      <DependentUpon>RateDo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RateMyDo.aspx.cs">
+      <DependentUpon>RateMyDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RateMyDo.aspx.designer.cs">
+      <DependentUpon>RateMyDo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RateProv.aspx.cs">
+      <DependentUpon>RateProv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RateProv.aspx.designer.cs">
+      <DependentUpon>RateProv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rmd.aspx.cs">
+      <DependentUpon>Rmd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rmd.aspx.designer.cs">
+      <DependentUpon>Rmd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.aspx.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule.aspx.designer.cs">
+      <DependentUpon>Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectDo.aspx.cs">
+      <DependentUpon>SelectDo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectDo.aspx.designer.cs">
+      <DependentUpon>SelectDo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectRMD.aspx.cs">
+      <DependentUpon>SelectRMD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectRMD.aspx.designer.cs">
+      <DependentUpon>SelectRMD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tst.aspx.cs">
+      <DependentUpon>Tst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tst.aspx.designer.cs">
+      <DependentUpon>Tst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TwilioVoiceCall.aspx.cs">
+      <DependentUpon>TwilioVoiceCall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TwilioVoiceCall.aspx.designer.cs">
+      <DependentUpon>TwilioVoiceCall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Up.aspx.cs">
+      <DependentUpon>Up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Up.aspx.designer.cs">
+      <DependentUpon>Up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Up2.aspx.cs">
+      <DependentUpon>Up2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Up2.aspx.designer.cs">
+      <DependentUpon>Up2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Upload.aspx.designer.cs">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DoUpload.ascx.cs">
+      <DependentUpon>DoUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DoUpload.ascx.designer.cs">
+      <DependentUpon>DoUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FavesGrid.ascx.cs">
+      <DependentUpon>FavesGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FavesGrid.ascx.designer.cs">
+      <DependentUpon>FavesGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InteractiveImage.ascx.cs">
+      <DependentUpon>InteractiveImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InteractiveImage.ascx.designer.cs">
+      <DependentUpon>InteractiveImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NavBar.ascx.cs">
+      <DependentUpon>NavBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NavBar.ascx.designer.cs">
+      <DependentUpon>NavBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RateImage.ascx.cs">
+      <DependentUpon>RateImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RateImage.ascx.designer.cs">
+      <DependentUpon>RateImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RateMyDo.ascx.cs">
+      <DependentUpon>RateMyDo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RateMyDo.ascx.designer.cs">
+      <DependentUpon>RateMyDo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ThumbGrid.ascx.cs">
+      <DependentUpon>ThumbGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ThumbGrid.ascx.designer.cs">
+      <DependentUpon>ThumbGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WatermarkImage.ascx.cs">
+      <DependentUpon>WatermarkImage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\WatermarkImage.ascx.designer.cs">
+      <DependentUpon>WatermarkImage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Validate.aspx.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validate.aspx.designer.cs">
+      <DependentUpon>Validate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Verified.aspx.cs">
+      <DependentUpon>Verified.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Verified.aspx.designer.cs">
+      <DependentUpon>Verified.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm.aspx.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm.aspx.designer.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HS-Service.asmx.cs">
+      <DependentUpon>HS-Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xchange.aspx.cs">
+      <DependentUpon>xchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xchange.aspx.designer.cs">
+      <DependentUpon>xchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="X_Path.aspx.cs">
+      <DependentUpon>X_Path.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="X_Path.aspx.designer.cs">
+      <DependentUpon>X_Path.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Header.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler1.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7416</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

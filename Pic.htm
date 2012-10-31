@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .rate_style
+        {
+            float: left;
+            position: relative;
+            z-index: 1;
+            /*width: 800px;*/
+        }
+        
+        .view_info
+        {
+            background-color: #000000;
+            opacity: .5;
+            width: 800px;
+            height: 20%;
+            position: absolute; /*top: 340px;*/
+            top: 80%;
+            display: block; /*z-index: 1;*/
+        }
+        
+        .style_info
+        {
+            position: absolute;
+            display: block;
+            top: 82%;
+            left: 0px; /*width: 120px;*/
+            height: 60px;
+            margin-left: 10px;
+        }
+        
+        .hair_title
+        {
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        
+        .stylist_name
+        {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-family: Arial;
+        }
+        
+        .left-scroll
+        {
+            position: absolute;
+            top: 45%;
+            left: 5%;
+        }
+        
+        .right-scroll
+        {
+            position: absolute;
+            top: 45%;
+            left: 95.5%;
+        }
+        
+        .rate_pic
+        {
+            border: 1px solid #666666;
+            position: relative;
+            }
+    </style>
+</head>
+<body>
+    <div class="rate_style">
+        <img src="images/inacup_vanilla.jpg" class="rate_pic" border="0">
+        <a href="#"><img src="images/left_scroll.png" class="left-scroll" /></a>
+        <a href="#"><img src="images/right_scroll.png" class="right-scroll" /></a>
+        <div class="view_info">
+        </div>
+        <span class="style_info">
+            <p class="hair_title">
+                Style</p>
+            <p class="stylist_name">
+                Brenton Lee Salon and Studio</p>
+        </span>
+    </div>
+</body>
+</html>

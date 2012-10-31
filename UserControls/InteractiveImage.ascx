@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="InteractiveImage.ascx.cs" Inherits="HairSlayer.UserControls.InteractiveImage" %>
+<asp:Label ID="lblImage" runat="server" Text=""></asp:Label>

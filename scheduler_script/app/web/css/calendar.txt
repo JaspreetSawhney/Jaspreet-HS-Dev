@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+[calendarContainer]{
+	overflow: hidden;
+	position: relative;
+}
+[calendarContainer] a{
+	outline: none;
+}
+[calendarContainer] .StivaApp_Left{
+	float: left;
+	width: 220px;
+}
+[calendarContainer] .StivaApp_Date{
+	overflow: hidden;
+}
+[calendarContainer] .StivaApp_Selected{
+}
+[calendarContainer] .StivaApp_Services{
+	float: left;
+	margin-left: 10px;
+	width: [calendar_width]px;
+}
+
+[calendarContainer] .SBScript_Table{
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+[calendarContainer] .SBScript_Table,
+[calendarContainer] .SBScript_Form{
+	color: #000;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+[calendarContainer] .SBScript_Event_Button,
+[calendarContainer] .SBScript_Event_Header,
+[calendarContainer] .SBScript_Event_Time,
+[calendarContainer] .SBScript_Event_Title,
+[calendarContainer] .SBScript_Event_Detail,
+[calendarContainer] .SBScript_Event_Add,
+[calendarContainer] .SBScript_Event_Description{
+	font-family: [font_family];
+	font-size: [font_size]px;
+}
+/* Booking form */
+[calendarContainer] .SBScript_Holder,
+[calendarContainer] .SBScript_W_Holder{
+	width: [calendar_width]px;
+}
+[calendarContainer] .SBScript_Font{
+	color: #000;
+	font-family: [font_family];
+	font-size: [font_size]px;	
+}

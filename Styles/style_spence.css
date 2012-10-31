@@ -1,0 +1,280 @@
+
+/*styles for the do page*/
+#MainBody_proimg{
+  width:400px;
+  height:400px;
+  margin-bottom:10px;
+}
+
+
+#MainBody_DoName{
+  margin-bottom:5px;
+}
+
+.clear{
+  clear:both;
+}
+
+
+#styled_by{
+  color:#999999;
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+
+#stylist_info_do{
+  margin-bottom:15px;
+  
+}
+
+#custom-hr 
+{
+    border-bottom: 2px solid #FF0000;
+    width: 100%;
+}
+
+#share_add_do_wrap{
+  margin-top:10px;
+  margin-bottom:10px;
+  position:relative;
+  height:34px;
+  
+}
+
+
+
+/*Social buttons*/
+
+#tweet_it_do{
+  position:absolute;
+  left:70px;
+  top:6px;
+
+}
+
+#facebook_do{
+  position:absolute;
+  left:0px;
+  top:6px;
+}
+
+#g-plus{
+  
+  position:absolute;
+  width:50px;
+  top:4px;
+  left:156px;
+}
+
+
+/*add style get style buttons*/
+#get_style_do{
+  position:absolute;
+  left:231px;
+  top:0px;
+}
+
+#add_style_do{
+  position:absolute;
+  left:371px;
+  top:0px;
+}
+
+
+.link-button{
+padding-top:7px;
+text-align:center;
+display:block;
+-moz-border-radius: 8px;
+border-radius: 8px;
+height: 21px;
+width: 126px;
+color: white;
+background-color: #999;
+font-size: 14px;
+font-weight: bold;
+border: 2px outset buttonface;
+}
+
+.site-button{
+  cursor:pointer;
+}
+
+/*comments and comment box*/
+#MainBody_txtcoment{
+  height:133px;
+  width:553px;
+  border: 0px solid #FFFFFF; 
+  background-color: #EEEEEE;
+}
+
+#MainBody_btnsbmit{
+  margin-top:10px;
+  margin-bottom:10px;
+  position:relative;
+  left:425px;
+}
+
+#recent_comments_title{
+  color:black;
+  font-size:18px;
+  font-weight:bold;
+  display:block;
+  margin-bottom:10px;
+}
+
+span.user_comment_text{
+  display:block;
+}
+
+.single-comment{
+  margin-bottom:30px;
+  
+  
+}
+
+#txtWhere{
+  outline:none;
+  width:120px;
+  font-size:14px;
+}
+
+#txtSearch{
+  outline:none;
+  width:200px;
+  font-size:14px;
+}
+
+.header-search-button{
+  
+}
+
+.header-search-button {
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    height:30px;
+    width:70px;
+    cursor:pointer;
+    font-size:14px;
+  
+
+}    
+
+
+#search-header-form{
+  position:absolute;
+  right:120px;
+  top:10px;
+}
+
+.arrow_down{
+  position:relative;
+  top:3px;
+  left:3px;
+}
+
+#view_more_button{
+  text-decoration:none;
+  color:#999;
+  float:right;
+  position:relative;
+  top:10px;
+  left:10px;
+  
+}
+
+
+/*all the styles for the gallery*/
+#transparent_background_cover{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  z-index:1000;
+  background-color:white;
+  opacity:.8;
+  filter: alpha(opacity = 80);
+  display:none;
+}
+
+#full_style_gallery{
+  width:800px;
+  height:400px;
+  background-color:#000;
+  position:fixed;
+  top:50%;
+  left:50%;
+  margin-top: -200px;
+  margin-left: -400px;
+  z-index:1001;
+  display:none;
+}
+
+#close_gallery{
+  color:#fff;
+  position:absolute;
+  right:10px;
+  top:360px;
+  display:block;
+  cursor:pointer;
+}
+
+#image_holder{
+  position:relative;
+  top:10px;
+  z-index:1003;
+  height:350px;
+  width:800px;
+  overflow-y:scroll;
+}
+
+#image_holder ul{
+  margin:0px;
+  padding:0px;
+}
+
+#image_holder ul li{
+  list-style:none;
+  margin-left:10px;
+  margin-top:10px;
+  padding:0px;
+  float:left;
+  
+}
+
+#image_holder ul li img{
+  width:119px;
+  height:119px;
+}
+
+.cover_thumbnail{
+  width:119px;
+  height:119px;
+  background-color:#c0c0c0;
+  opacity:.6;
+  filter: alpha(opacity = 60);
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
+.thumb_wrap{
+  position:relative;
+  cursor:pointer;
+}
+
+.thumb_wrap a:hover > .cover_thumbnail{
+  display:none;
+}
+
+
+#MainBody_GetDirections{
+  text-decoration:none;
+  color:#666666;
+  position:relative;
+  top:10px;
+  left:195px;
+  
+}
